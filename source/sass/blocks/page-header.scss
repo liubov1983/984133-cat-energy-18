@@ -1,0 +1,18 @@
+.page-header__logo {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo-image {
+  width: 191px;
+  height: 39px;
+  padding-top: 15px;
+  padding-left: 130px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}

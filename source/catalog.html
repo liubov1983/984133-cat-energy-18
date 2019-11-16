@@ -3,38 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи: Подбор программы</title>
+    <style>
+      @font-face {
+        font-family: Oswald;
+        src: url("fonts/oswaldmedium.woff2")format("woff2"),
+          url("fonts/oswaldmedium.woff")format("woff"),
+          url("fonts/oswaldregular.woff2")format("woff2"),
+          url("fonts/oswaldregular.woff")format("woff");
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
 
-    <header class="page-header">
+  <body>
+    <header class="page-header container">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="191" height="39"
-          alt="Логотип Кэт энерджи">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list inner-nav">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>Каталог продукции</a>
+              <a class="site-list__link">Каталог продукции</a>
             </li>
             <li class="site-list__item ">
-              <a href="form.html">Подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main container">
       <h1 class="page-main__title">Каталог продукции</h1>
       <section class="products">
         <h2 class="visually-hidden">Функциональное питание</h2>
         <ul class="products__list catalog">
           <li class="catalog__item catalog__item--chicken-small">
+            <img class="catalog__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г">
             <a href="#">
               <h3 class="catalog__title">Cat Energy PRO 500 г</h3>
             </a>
@@ -55,6 +65,7 @@
             <a class="catalog__link button" href="#">Заказать</a>
           </li>
           <li class="catalog__item catalog__item--chicken-big">
+            <img src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г">
             <a href="#">
               <h3 class="catalog__title">Cat Energy PRO 1000 г</h3>
             </a>
@@ -75,6 +86,7 @@
             <a class="catalog__link button" href="#">Заказать</a>
           </li>
           <li class="catalog__item catalog__item--fish-small">
+            <img src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г">
             <a href="#">
               <h3 class="catalog__title">Cat Energy PRO 500 г</h3>
             </a>
@@ -95,6 +107,7 @@
             <a class="catalog__link button" href="#">Заказать</a>
           </li>
           <li class="catalog__item catalog__item--fish-big">
+            <img src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г">
             <a href="#">
               <h3 class="catalog__title">Cat Energy PRO 1000 г</h3>
             </a>
@@ -115,6 +128,7 @@
             <a class="catalog__link button" href="#">Заказать</a>
           </li>
           <li class="catalog__item catalog__item--buckwheat-small">
+            <img src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 г">
             <a href="#">
               <h3 class="catalog__title">Cat Energy Slim 500 г</h3>
             </a>
@@ -135,6 +149,7 @@
             <a class="catalog__link button" href="#">Заказать</a>
           </li>
           <li class="catalog__item catalog__item--buckwheat-big">
+            <img src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 1000 г">
             <a href="#">
               <h3 class="catalog__title">Cat Energy Slim 1000 г</h3>
             </a>
@@ -155,6 +170,7 @@
             <a class="catalog__link button" href="#">Заказать</a>
           </li>
           <li class="catalog__item catalog__item--rice">
+            <img src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 г">
             <a href="#">
               <h3 class="catalog__title">Cat Energy Slim 500 г</h3>
             </a>
@@ -254,11 +270,10 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="128" height="34"
-            alt="Логотип Кэт энерджи">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="34" alt="Логотип Кэт энерджи">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -266,7 +281,8 @@
               <a class="social__link social__link--vkontacte" href="https://vk.com/htmlacademy">Мы в ВКонтакте</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+                Инстаграме</a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
@@ -274,7 +290,6 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">HTML Academy</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>

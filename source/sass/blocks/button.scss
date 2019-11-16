@@ -1,0 +1,20 @@
+.button {
+  display: block;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 11px;
+
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #68b738;
+  
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

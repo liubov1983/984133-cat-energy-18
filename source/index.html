@@ -3,25 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи: Главная</title>
+    <style>
+      @font-face {
+        font-family: Oswald;
+        src: url("fonts/oswaldmedium.woff2")format("woff2"),
+            url("fonts/oswaldmedium.woff")format("woff"),
+            url("fonts/oswaldregular.woff2")format("woff2"),
+            url("fonts/oswaldregular.woff")format("woff");
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
 
-    <header class="page-header">
+  <body>
+    <header class="page-header container">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="191" height="39" alt="Логотип Кэт энерджи">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -29,13 +39,13 @@
     </header>
 
     <main class="page-main">
-      <section class="promo">
+      <section class="promo container">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <a class="promo__link button" href="form.html">Подобрать программу</a>
       </section>
 
-      <section class="goal">
+      <section class="goal container">
         <h2 class="visually-hidden">Цель программы</h2>
         <article class="goal__item goal__item--slim">
           <h3 class="goal__title">Похудение</h3>
@@ -51,7 +61,7 @@
         </article>
       </section>
 
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--leaf">
@@ -69,7 +79,7 @@
         </ul>
       </section>
 
-      <section class="example">
+      <section class="example container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих
@@ -90,7 +100,7 @@
 
       <section class="contacts-block">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts-block__container contacts">
+        <div class="contacts-block__container contacts container">
           <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
@@ -101,10 +111,10 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
-          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="128" height="34"
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="34"
             alt="Логотип Кэт энерджи">
         </a>
         <div class="page-footer__social social">
@@ -121,7 +131,6 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">HTML Academy</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
