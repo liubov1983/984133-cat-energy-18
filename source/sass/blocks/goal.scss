@@ -1,0 +1,39 @@
+.goal__item {
+  margin-bottom: 20px;
+  padding: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.goal__title {
+  margin: 0;
+  margin-top: 19px;
+  padding-left: 72px;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.goal__description {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-family: "Arial", sans-serif;
+  color: #444444;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.goal__link {
+  padding-top: 20px;
+
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+}
