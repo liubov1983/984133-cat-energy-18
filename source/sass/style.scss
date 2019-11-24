@@ -1,4 +1,7 @@
+@import "fonts.scss";
 @import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
 @import "common.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -9,7 +12,15 @@
 @import "blocks/button.scss";
 @import "blocks/goal.scss";
 @import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/results.scss";
 @import "blocks/catalog.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/additional.scss";
+@import "blocks/user-form.scss";
+@import "blocks/form.scss";
+@import "blocks/contacts-block.scss";
+@import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";

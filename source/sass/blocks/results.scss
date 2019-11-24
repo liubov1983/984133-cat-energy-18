@@ -1,3 +1,55 @@
 .results {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.results__value {
+  margin: 0;
+  width: 122px;
+  height: 26px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+
+  border: 1px solid $border-grey;
+  border-radius: 3px;
+}
+
+.results__description {
+  position: absolute;
+  top: 45px;
   display: block;
+  width: 87px;
+  padding-top: 5px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $dark-grey;
+  background-color: $bg-grey;
+}
+
+.results__description--left {
+  left: 18px;
+}
+
+.results__description--right {
+  right: 20px;
+}
+
+.results__text {
+  margin: 0 auto;
+  margin-top: 38px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
 }

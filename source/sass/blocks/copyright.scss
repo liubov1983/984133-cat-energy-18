@@ -1,15 +1,40 @@
 .copyright {
-  padding-top: 22px;
-  padding-bottom: 28px;
+  position: relative;
+  padding-top: 31px;
+  padding-bottom: 31px;
 }
 
 .copyright__link {
-  color: #444444;
+  color: $dark-grey;
   font-family: "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 16px;
+  line-height: 16px;
 
   &:active {
     color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.copyright__icon {
+  position: absolute;
+  top: 22px;
+  right: 0;
+
+  path {
+    fill: $darker-grey;
+  }
+
+  &:hover,
+  &:focus {
+    path {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    path {
+      fill: $green;
+      opacity: 0.3;
+    }
   }
 }

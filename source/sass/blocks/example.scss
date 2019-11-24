@@ -1,3 +1,84 @@
 .example {
-  display: block;
+  background-color: $bg-grey;
+  padding-bottom: 39px;
+}
+
+.example__title {
+  margin: 0;
+  padding-top: 33px;
+  padding-bottom: 33px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+
+  font-family: "Arial", sans-serif;
+  color: $dark-grey;
+}
+
+.example__wrapper {
+  margin-top: 44px;
+}
+
+.examlpe__toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.example__button {
+  padding: 0;
+  padding-bottom: 3px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dotted rgba(152, 152, 152, 0.23);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid rgba(152, 152, 152, 0.4);
+  }
+
+  &:active {
+    border: none;
+  }
+}
+
+.example__scale {
+  position: relative;
+
+  width: 84px;
+  height: 14px;
+
+  background-color: $white;
+  border: 1px solid $border-grey;
+  border-radius: 6px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    left: 6px;
+    top: 4px;
+
+    width: 35px;
+    height: 6px;
+
+    background-color: $green;
+    border-radius: 3px;
+  }
 }

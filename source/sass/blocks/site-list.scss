@@ -1,24 +1,21 @@
 .site-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include list-reset;
 }
 
 .site-list__item {
   padding-top: 24px;
   padding-bottom: 24px;
 
-  color: #000000;
+  color: $black;
   font-size: 20px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
 
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $grey;
 }
 
-.site-list__link {
+.site-list__link[href] {
   &:hover,
   &:focus {
     color: rgba(17, 17, 17, 0.6);
