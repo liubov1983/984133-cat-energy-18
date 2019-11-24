@@ -4,15 +4,16 @@
   padding-top: 14px;
   padding-bottom: 11px;
 
-  color: #ffffff;
+  color: $white;
   text-align: center;
   text-transform: uppercase;
 
-  background-color: #68b738;
+  background-color: $green;
+  border: none;
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $green-hover;
   }
 
   &:active {

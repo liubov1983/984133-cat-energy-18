@@ -1,8 +1,37 @@
 .social__list {
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 
-  list-style: none;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 21px;
+
+  border-top: 1px solid $border-light-grey;
+  border-bottom: 1px solid #$border-light-grey;
+}
+
+.social__item {
+  width: 55px;
+  text-align: center;
+}
+
+.social__icon {
+  path {
+    fill: $darker-grey;
+  }
+
+  &:hover,
+  &:focus {
+    path {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    path {
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
 }
