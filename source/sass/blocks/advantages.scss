@@ -30,43 +30,125 @@
     height: 60px;
 
     background-color: $green;
-  }
-
-  &::after {
-    content: "";
-    top: 0;
-    left: 0;
-
-    position: absolute;
-
-    width: 60px;
-    height: 60px;
-
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
 }
 
 .advantages__item--leaf {
-  &::after {
+  &::before {
     background-image: url("../img/advantage-leaf@1x.png");
   }
 }
 
 .advantages__item--water {
-  &::after {
+  &::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
 }
 
 .advantages__item--fork {
-  &::after {
+  &::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
 }
 
 .advantages__item--time {
-  &::after {
+  &::before {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding-top: 51px;
+    padding-bottom: 55px;
+
+    border-bottom: 1px solid $border-grey;
+  }
+
+  .advantages__title {
+    margin: 0;
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    padding-top: 117px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    margin-right: 100px;
+    margin-bottom: 0;
+    width: 244px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "";
+      top: 0;
+      left: 126px;
+      z-index: -1;
+
+      position: absolute;
+      background-color: lawngreen;
+    }
+  }
+
+  .advantages__item--leaf {
+    margin-bottom: 89px;
+
+    &::after {
+      content: "1";
+      width: 71px;
+      height: 228px;
+    }
+  }
+
+  .advantages__item--water {
+    &::after {
+      content: "2";
+      width: 114px;
+      height: 230px;
+    }
+  }
+
+  .advantages__item--fork {
+    &::after {
+      content: "3";
+      width: 113px;
+      height: 233px;
+    }
+  }
+
+  .advantages__item--time {
+    &::after {
+      content: "4";
+      width: 121px;
+      height: 228px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding-top: 79px;
+
+    border: none;
+  }
+
+  .advantages__item {
+    margin-right: 0;
+    width: 220px;
   }
 }
