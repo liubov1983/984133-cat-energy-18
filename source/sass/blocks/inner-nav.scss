@@ -1,3 +1,9 @@
 .inner-nav {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .inner-nav {
+    display: flex;
+  }
+}
