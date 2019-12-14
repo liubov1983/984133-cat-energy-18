@@ -1,6 +1,5 @@
 .example {
   background-color: $bg-grey;
-  padding-bottom: 39px;
 }
 
 .example__title {
@@ -24,6 +23,7 @@
 
 .example__wrapper {
   margin-top: 44px;
+  padding-bottom: 39px;
 }
 
 .examlpe__toggle {
@@ -80,5 +80,139 @@
 
     background-color: $green;
     border-radius: 3px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $white;
+  }
+
+  .example__title {
+    padding-top: 51px;
+    padding-bottom: 60px;
+
+    font-size: 60px;
+  }
+
+  .example__text {
+    margin-bottom: 56px;
+    width: 677px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__wrapper {
+    margin-top: 241px;
+    padding-bottom: 68px;
+
+    background-color: $slider-grey;
+  }
+
+  .example__image {
+    display: none;
+  }
+
+  .example__slider {
+    position: relative;
+    margin: 0 auto;
+
+    width: 640px;
+    min-height: 500px;
+  }
+
+  .example__slide {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+  }
+
+  .example__slide--before {
+    z-index: 10;
+
+    width: 50%;
+
+    background-image: url("../img/before-tablet@1x.png");
+  }
+
+  .example__slide--after {
+    z-index: 5;
+
+    background-image: url("../img/after-tablet@1x.png");
+  }
+
+  .examlpe__toggle {
+    width: 580px;
+  }
+
+  .example__scale {
+    width: 428px;
+    height: 6px;
+
+    background-color: $range-grey;
+    border: none;
+    border-radius: 2.5px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      left: 211px;
+      top: 0;
+      z-index: 2;
+
+      margin-right: -4px;
+      width: 8px;
+      height: 8px;
+
+      background-color: $green;
+      border-radius: 50%;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      left: 198px;
+      top: -13px;
+      z-index: 1;
+
+      width: 34px;
+      height: 34px;
+
+      background-color: $white;
+      border: 1px solid $border-grey;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &:hover::before,
+    &:focus::before {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active::before {
+      border: 2px solid $green;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .example__button {
+    padding-bottom: 6px;
+
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__title {
+    padding-top: 90px;
+    padding-bottom: 66px;
   }
 }

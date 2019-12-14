@@ -19,28 +19,38 @@
 
 .form__list--radio {
   padding-top: 29px;
+  padding-bottom: 26px;
+
   border-top: 1px solid $radio-grey;
   border-bottom: 1px solid $radio-grey;
+}
+
+.form__item--radio {
+  margin-bottom: 26px;
+}
+
+.form__item--radio:last-child {
+  margin-bottom: 0;
 }
 
 .form__label {
   position: relative;
   display: flex;
   align-items: center;
+
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
 .form__label--radio {
-  margin-bottom: 26px;
   padding-left: 50px;
 }
 
 .form__input {
   margin-left: 12px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 12px;
   padding-left: 16px;
   flex-grow: 1;
 
@@ -158,6 +168,7 @@
   padding-top: 15px;
   padding-left: 16px;
   width: 100%;
+  min-height: 150px;
 
   font-size: 16px;
   line-height: 18px;
@@ -230,4 +241,209 @@
   font-family: "Arial", sans-serif;
   line-height: 16px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form__item {
+    margin-bottom: 20px;
+  }
+
+  .form__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .form__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__input {
+    margin-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .form__fieldset--radio {
+    margin-top: 79px;
+  }
+
+  .form__list--radio {
+    padding-top: 36px;
+    padding-bottom: 33px;
+
+    border: 1px solid rgba(205, 205, 205, 0.5);
+  }
+
+  .form__item--radio {
+    margin-bottom: 33px;
+  }
+
+  .form__item--radio:last-child {
+    margin-bottom: 0;
+  }
+
+  .form__label--radio {
+    padding-left: 88px;
+  }
+
+  .form__input--radio + .form__label--radio::before {
+    top: -11px;
+    left: 28px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .form__input--radio:checked + .form__label--radio::after {
+    top: 0;
+    left: 39px;
+
+    width: 18px;
+    height: 18px;
+  }
+
+  .form__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__legend--contacts {
+    padding-top: 79px;
+    padding-bottom: 70px;
+  }
+
+  .form__icon {
+    position: absolute;
+    top: 20px;
+    right: 18px;
+
+    path {
+      fill: $icon-black;
+    }
+  }
+
+  .form__icon--tel {
+    top: 18px;
+  }
+
+  .form__legend--comment {
+    padding-top: 69px;
+    padding-bottom: 71px;
+  }
+
+  .form__textarea {
+    padding-top: 17px;
+    padding-left: 20px;
+    min-width: 174px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__legend--additional {
+    padding-top: 69px;
+    padding-bottom: 53px;
+  }
+
+  .form__list--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__item--checkbox {
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .form__label--checkbox {
+    margin-bottom: 54px;
+    padding-left: 55px;
+  }
+
+  .form__input--checkbox + .form__label--checkbox::before {
+    top: -11px;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .form__input--checkbox:checked + .form__label--checkbox::after {
+    top: 0;
+    left: 10px;
+
+    width: 21px;
+    height: 16px;
+
+    background-image: url("../img/icon-tick.svg");
+  }
+
+  .form__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .form__button {
+    margin-top: 0;
+    margin-right: 61px;
+
+    width: 283px;
+  }
+
+  .user-form__note {
+    padding: 0;
+
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__item {
+    width: 570px;
+  }
+
+  .form__fieldset--radio {
+    margin-top: 0;
+  }
+
+  .form__legend--contacts {
+    padding-top: 73px;
+  }
+
+  .form__list--contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__legend--comment {
+    padding-top: 71px;
+  }
+
+  .form__textarea {
+    min-height: 174px;
+  }
+
+  .form__legend--additional {
+    padding-top: 71px;
+    padding-bottom: 64px;
+  }
+
+  .form__item--checkbox {
+    justify-content: space-between;
+    width: 25%;
+  }
+
+  .form__label--checkbox {
+    margin-bottom: 72px;
+  }
+
+  .form__button {
+    width: 568px;
+  }
 }

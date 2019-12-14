@@ -1,3 +1,25 @@
-.contacts-block__container--inner {
-  background-color: $bg-grey;
+.contacts-block__container {
+  padding-top: 31px;
+  padding-bottom: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-block__container {
+    padding-top: 69px;
+    padding-bottom: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-block {
+    position: relative;
+  }
+
+  .contacts-block__container {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    background-color: $white;
+  }
 }

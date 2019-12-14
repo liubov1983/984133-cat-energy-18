@@ -1,0 +1,10 @@
+.inner-contacts {
+  background-color: $bg-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .inner-contacts__container {
+    margin: 0 auto;
+    width: 631px;
+  }
+}
