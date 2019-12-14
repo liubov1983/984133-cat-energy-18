@@ -1,3 +1,14 @@
-.user-form {
-  display: block;
+@media (min-width: $tablet-width) {
+  .user-form {
+    padding-bottom: 72px;
+    margin: 0 auto;
+    width: 630px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-form {
+    padding-bottom: 82px;
+    width: 1220px;
+  }
 }

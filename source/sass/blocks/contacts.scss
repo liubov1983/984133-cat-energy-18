@@ -1,7 +1,6 @@
 .contacts {
   display: flex;
-  padding-top: 31px;
-  padding-bottom: 26px;
+  justify-content: space-between;
 }
 
 .contacts__text {
@@ -15,9 +14,13 @@
 }
 
 .contacts__adress {
+  width: 140px;
+}
+
+.contacts__street,
+.contacts__city {
   margin: 0;
   padding: 0;
-  width: 140px;
 
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -28,4 +31,40 @@
   width: 100%;
 
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__text {
+    width: 154px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 155px;
+  }
+
+  .contacts__street,
+  .contacts__city {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-left: 76px;
+    padding-right: 90px;
+    width: 570px;
+  }
+
+  .contacts__street,
+  .contacts__city {
+    text-align: left;
+  }
 }

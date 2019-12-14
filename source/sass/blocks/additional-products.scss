@@ -23,3 +23,30 @@
     background-color: $green;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .additional-products__title {
+    padding-top: 71px;
+    padding-bottom: 75px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products {
+    padding-bottom: 86px;
+  }
+
+  .additional-products__title {
+    padding-top: 79px;
+  }
+
+  .additional-products__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
