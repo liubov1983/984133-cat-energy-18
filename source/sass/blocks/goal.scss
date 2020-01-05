@@ -1,6 +1,6 @@
 .goal__item {
   margin-bottom: 20px;
-  padding-top: 39px;
+  padding-top: 30px;
   padding-right: 20px;
   padding-bottom: 22px;
   padding-left: 20px;
@@ -22,8 +22,8 @@
 
   &::before {
     content: "";
-    top: -7px;
-    left: 0;
+    top: -5px;
+    left: 1px;
 
     position: absolute;
 
@@ -38,8 +38,8 @@
 .goal__title--slim {
   &::after {
     content: "";
-    top: -9px;
-    left: 8px;
+    top: -8px;
+    left: 9px;
 
     position: absolute;
 
@@ -55,8 +55,8 @@
 .goal__title--pro {
   &::after {
     content: "";
-    top: 6px;
-    left: -9px;
+    top: 5px;
+    left: -8px;
 
     position: absolute;
     width: 67px;
@@ -70,8 +70,8 @@
 
 .goal__description {
   margin: 0;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 
   font-family: "Arial", sans-serif;
   color: $dark-grey;
@@ -87,6 +87,8 @@
   position: relative;
   display: block;
   padding-top: 20px;
+
+  font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
 
@@ -99,7 +101,7 @@
 
     position: absolute;
     top: 23px;
-    left: 85px;
+    left: 96px;
     width: 25px;
     height: 12px;
 
@@ -122,7 +124,7 @@
 @media (min-width: $tablet-width) {
   .goal__item {
     margin-bottom: 30px;
-    padding-top: 81px;
+    padding-top: 77px;
     padding-bottom: 62px;
     padding-left: 52px;
   }
@@ -137,8 +139,8 @@
     font-size: 36px;
 
     &::before {
-      top: 11px;
-      left: 391px;
+      top: 14px;
+      left: 395px;
 
       width: 200px;
       height: 200px;
@@ -147,8 +149,8 @@
 
   .goal__title--slim {
     &::after {
-      top: 0;
-      left: 420px;
+      top: 3px;
+      left: 424px;
 
       width: 141px;
       height: 194px;
@@ -157,8 +159,8 @@
 
   .goal__title--pro {
     &::after {
-      top: 54px;
-      left: 357px;
+      top: 57px;
+      left: 360px;
 
       width: 268px;
       height: 113px;
@@ -167,13 +169,17 @@
 
   .goal__description {
     width: 375px;
-    padding-top: 26px;
-    padding-bottom: 61px;
+    padding-top: 25px;
+    padding-bottom: 56px;
 
     font-size: 16px;
     line-height: 24px;
 
     border-bottom: none;
+  }
+
+  .goal__description--pro {
+    width: 340px;
   }
 
   .goal__link {
@@ -183,10 +189,16 @@
     line-height: 20px;
 
     &::before {
-      top: 5px;
-      left: 130px;
+      top: 4px;
+      left: 131px;
       width: 24px;
       height: 11px;
+    }
+  }
+
+  .goal__link--pro {
+    &::before {
+      left: 125px;
     }
   }
 }
@@ -207,7 +219,7 @@
 
     &::before {
       top: -30px;
-      left: 0;
+      left: 1px;
 
       width: 100px;
       height: 100px;
@@ -216,8 +228,8 @@
 
   .goal__title--slim {
     &::after {
-      top: -38px;
-      left: 13px;
+      top: -37px;
+      left: 14px;
 
       width: 71px;
       height: 97px;
@@ -226,8 +238,8 @@
 
   .goal__title--pro {
     &::after {
-      top: -12px;
-      left: -18px;
+      top: -10px;
+      left: -17px;
 
       width: 134px;
       height: 57px;
@@ -236,8 +248,8 @@
 
   .goal__description {
     width: 462px;
-    padding-top: 66px;
-    padding-bottom: 36px;
+    padding-top: 74px;
+    padding-bottom: 33px;
   }
 
   .goal__description br {

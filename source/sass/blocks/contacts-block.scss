@@ -1,24 +1,41 @@
+.contacts-block {
+  position: relative;
+  background-image: linear-gradient($white 114px, transparent 114px);
+}
+
 .contacts-block__container {
-  padding-top: 31px;
+  padding-top: 28px;
   padding-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts-block__container {
-    padding-top: 69px;
+    padding-top: 66px;
+    padding-right: 42px;
+    padding-left: 40px;
     padding-bottom: 62px;
+  }
+
+  .contacts-block__container--form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .contacts-block__map {
+    height: 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts-block {
-    position: relative;
+    background-image: none;
   }
 
   .contacts-block__container {
     position: absolute;
-    top: 95px;
-    left: 110px;
+    top: 93px;
+    left: 140px;
+    padding-top: 65px;
 
     background-color: $white;
   }

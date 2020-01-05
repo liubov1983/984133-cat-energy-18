@@ -1,10 +1,20 @@
 .inner-contacts {
-  background-color: $bg-grey;
+  background-image: linear-gradient($bg-grey 114px, transparent 114px);
 }
 
 @media (min-width: $tablet-width) {
+  .inner-contacts {
+    background-image: linear-gradient($bg-grey 205px, transparent 205px);
+  }
+
   .inner-contacts__container {
     margin: 0 auto;
     width: 631px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-contacts {
+    background-image: none;
   }
 }

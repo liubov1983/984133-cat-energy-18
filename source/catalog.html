@@ -39,13 +39,18 @@
     </header>
 
     <main class="page-main">
-      <div class="container">
+      <div class="container page-main__container">
         <h1 class="page-main__title">Каталог продукции</h1>
         <section class="products">
           <h2 class="visually-hidden">Функциональное питание</h2>
           <ul class="products__list catalog">
             <li class="catalog__item catalog__item--chicken-small">
-              <img class="catalog__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@1x.jpg 1x, img/chicken-small-mobile@2x.jpg 2x"
+                  width="140" height="144" alt="Cat Energy PRO 500 г">
+              </picture>
               <div class="catalog__wrapper">
                 <a href="#">
                   <h3 class="catalog__title">Cat Energy PRO 500 г</h3>
@@ -68,7 +73,12 @@
               <a class="catalog__link button" href="#">Заказать</a>
             </li>
             <li class="catalog__item catalog__item--chicken-big">
-              <img class="catalog__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                <img class="catalog__image catalog__image--chicken-big" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@1x.jpg 1x, img/chicken-big-mobile@2x.jpg 2x" width="140"
+                    height="144" alt="Cat Energy PRO 1000 г">
+              </picture>
               <div class="catalog__wrapper">
                 <a href="#">
                   <h3 class="catalog__title">Cat Energy PRO 1000 г</h3>
@@ -91,7 +101,12 @@
               <a class="catalog__link button" href="#">Заказать</a>
             </li>
             <li class="catalog__item catalog__item--fish-small">
-              <img class="catalog__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 2x, img/fish-small-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@1x.jpg 1x, img/fish-small-mobile@2x.jpg 2x" width="140"
+                  height="144" alt="Cat Energy PRO 500 г">
+              </picture>
               <div class="catalog__wrapper">
                 <a href="#">
                   <h3 class="catalog__title">Cat Energy PRO 500 г</h3>
@@ -114,7 +129,12 @@
               <a class="catalog__link button" href="#">Заказать</a>
             </li>
             <li class="catalog__item catalog__item--fish-big">
-              <img class="catalog__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                <img class="catalog__image catalog__image--fish-big" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@1x.jpg 1x, img/fish-big-mobile@2x.jpg 2x" width="140"
+                  height="144" alt="Cat Energy PRO 1000 г">
+              </picture>
               <div class="catalog__wrapper">
                 <a href="#">
                   <h3 class="catalog__title">Cat Energy PRO 1000 г</h3>
@@ -137,7 +157,12 @@
               <a class="catalog__link button" href="#">Заказать</a>
             </li>
             <li class="catalog__item catalog__item--buckwheat-small">
-              <img class="catalog__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@1x.jpg 1x, img/buckwheat-small-mobile@2x.jpg 2x"
+                  width="140" height="144" alt="Cat Energy Slim 500 г">
+              </picture>
               <div class="catalog__wrapper">
                 <a href="#">
                   <h3 class="catalog__title">Cat Energy Slim 500 г</h3>
@@ -160,7 +185,12 @@
               <a class="catalog__link button" href="#">Заказать</a>
             </li>
             <li class="catalog__item catalog__item--buckwheat-big">
-              <img class="catalog__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 1000 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                <img class="catalog__image catalog__image--buckwheat-big" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@1x.jpg 1x, img/buckwheat-big-mobile@2x.jpg 2x"
+                  width="140" height="144" alt="Cat Energy Slim 1000 г">
+              </picture>
               <div class="catalog__wrapper">
                 <a href="#">
                   <h3 class="catalog__title">Cat Energy Slim 1000 г</h3>
@@ -183,7 +213,12 @@
               <a class="catalog__link button" href="#">Заказать</a>
             </li>
             <li class="catalog__item catalog__item--rice">
-              <img class="catalog__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 г">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@1x.jpg 1x, img/rice-small-mobile@2x.jpg 2x" width="140"
+                  height="144" alt="Cat Energy Slim 500 г">
+              </picture>
               <div class="catalog__wrapper">
                 <a href="#">
                   <h3 class="catalog__title">Cat Energy Slim 500 г</h3>
@@ -214,80 +249,82 @@
         </section>
       </div>
 
-      <section class="additional-products container">
-        <h2 class="additional-products__title">Дополнительные товары</h2>
-        <div class="additional-products__wrapper">
-          <ul class="additional-products__list additional">
-            <li class="additional__item">
-              <a href="#">
-                <h3 class="additional__title">Сахарозаменитель</h3>
-              </a>
-              <div class="additional__description">
-                <p class="additional__text">1 упаковка (100 г)</p>
-                <p class="additional__text additional__text--price">200 Р.</p>
-              </div>
-              <a class="additional__link button" href="#">Заказать</a>
-            </li>
-            <li class="additional__item">
-              <a href="#">
-                <h3 class="additional__title">Питьевая вода</h3>
-              </a>
-              <div class="additional__description">
-                <p class="additional__text">5 литров</p>
-                <p class="additional__text additional__text--price">50 Р.</p>
-              </div>
-              <a class="additional__link button" href="#">Заказать</a>
-            </li>
-            <li class="additional__item">
-              <a href="#">
-                <h3 class="additional__title">Молоко</h3>
-              </a>
-              <div class="additional__description">
-                <p class="additional__text">1 литр</p>
-                <p class="additional__text additional__text--price">100 Р.</p>
-              </div>
-              <a class="additional__link button" href="#">Заказать</a>
-            </li>
-            <li class="additional__item">
-              <a href="#">
-                <h3 class="additional__title">Витамины</h3>
-              </a>
-              <div class="additional__description">
-                <p class="additional__text">1 упаковка (30 г)</p>
-                <p class="additional__text additional__text--price">300 Р.</p>
-              </div>
-              <a class="additional__link button" href="#">Заказать</a>
-            </li>
-          </ul>
-          <div class="additional-products__promo">
-            <picture>
-              <source srcset="img/gift-photo-desktop@1x.jpg" media="(min-width: 1440px)">
-              <source srcset="img/gift-photo-tablet@1x.jpg" media="(min-width: 768px)">
-              <img class="additional-products__image" src="img/gift-photo-mobile@1x.jpg" width="280" height="289"
-                alt="Чехол в подарок">
-            </picture>
-            <svg class="additional-products__icon" width="56" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-              y="0px" viewBox="0 0 55.5 60" style="enable-background:new 0 0 55.5 60;" xml:space="preserve">
-              <path d="M52.3,12.2h-7c0.5-0.7,0.8-1.4,1.1-2.2c0.6-2,0.4-4.1-0.6-5.9c-1-1.8-2.6-3.1-4.6-3.7c-2-0.6-4.1-0.4-5.9,0.6
-              c-3.6,2-6.2,6.1-7.6,9c-1.4-2.9-4-7.1-7.6-9c-3.8-2-8.5-0.6-10.5,3.1c-1.4,2.7-1.2,5.8,0.5,8.1h-7c-1.7,0-3.1,1.4-3.1,3.1v9.4
-              c0,1.7,1.4,3.1,3.1,3.1H4v26.1c0,3.3,2.7,6,6,6h35.5c3.3,0,6-2.7,6-6V27.8h0.8c1.7,0,3.1-1.4,3.1-3.1v-9.4
-              C55.5,13.6,54.1,12.2,52.3,12.2z M36.5,3c1.3-0.7,2.7-0.8,4.1-0.4C41.9,3,43,3.9,43.7,5.2c0.7,1.3,0.8,2.7,0.4,4.1
-              c-0.4,1.2-1.1,2.2-2.2,2.9H29.4C30.5,9.6,33,5,36.5,3z M11.7,5.2C13.2,2.6,16.4,1.6,19,3c3.5,1.9,6,6.6,7.1,9.1H13.5
-              C11.2,10.7,10.4,7.6,11.7,5.2z M26.5,27.8v13.7H6.4V27.8H26.5z M6.4,53.9v-10h20.2v13.7H10C8,57.6,6.4,55.9,6.4,53.9z M45.5,57.6
-              H28.9V43.9h20.2v10C49.1,55.9,47.5,57.6,45.5,57.6z M49.1,41.5H28.9V27.8h20.2V41.5z M53.1,24.7c0,0.4-0.3,0.7-0.7,0.7h-2
-              c0,0,0,0,0,0s0,0,0,0H27.7c0,0,0,0,0,0s0,0,0,0H5.2c0,0,0,0,0,0s0,0,0,0h-2c-0.4,0-0.7-0.3-0.7-0.7v-9.4c0-0.4,0.3-0.7,0.7-0.7h49.2
-              c0.4,0,0.7,0.3,0.7,0.7V24.7z"/>
-            </svg>
-            <p class="additional-products__text">Закажите все
-            и получите чехол для кота в подарок!</p>
+      <div class="wrapper-catalog">
+        <section class="additional-products container">
+          <h2 class="additional-products__title">Дополнительные товары</h2>
+          <div class="additional-products__wrapper">
+            <ul class="additional-products__list additional">
+              <li class="additional__item">
+                <a href="#">
+                  <h3 class="additional__title">Сахарозаменитель</h3>
+                </a>
+                <div class="additional__description">
+                  <p class="additional__text">1 упаковка (100 г)</p>
+                  <p class="additional__text additional__text--price">200 Р.</p>
+                </div>
+                <a class="additional__link button" href="#">Заказать</a>
+              </li>
+              <li class="additional__item">
+                <a href="#">
+                  <h3 class="additional__title">Питьевая вода</h3>
+                </a>
+                <div class="additional__description">
+                  <p class="additional__text">5 литров</p>
+                  <p class="additional__text additional__text--price">50 Р.</p>
+                </div>
+                <a class="additional__link button" href="#">Заказать</a>
+              </li>
+              <li class="additional__item">
+                <a href="#">
+                  <h3 class="additional__title">Молоко</h3>
+                </a>
+                <div class="additional__description">
+                  <p class="additional__text">1 литр</p>
+                  <p class="additional__text additional__text--price">100 Р.</p>
+                </div>
+                <a class="additional__link button" href="#">Заказать</a>
+              </li>
+              <li class="additional__item">
+                <a href="#">
+                  <h3 class="additional__title">Витамины</h3>
+                </a>
+                <div class="additional__description">
+                  <p class="additional__text">1 упаковка (30 г)</p>
+                  <p class="additional__text additional__text--price">300 Р.</p>
+                </div>
+                <a class="additional__link button" href="#">Заказать</a>
+              </li>
+            </ul>
+            <div class="additional-products__promo">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/gift-photo-desktop@1x.jpg 1x, img/gift-photo-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/gift-photo-tablet@1x.jpg 1x, img/gift-photo-tablet@2x.jpg 2x">
+                <img class="additional-products__image" src="img/gift-photo-mobile@1x.jpg" srcset="img/gift-photo-mobile@1x.jpg 1x, img/gift-photo-mobile@2x.jpg 2x" width="280" height="289"
+                  alt="Чехол в подарок">
+              </picture>
+              <svg class="additional-products__icon" width="56" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 55.5 60" style="enable-background:new 0 0 55.5 60;" xml:space="preserve">
+                <path d="M52.3,12.2h-7c0.5-0.7,0.8-1.4,1.1-2.2c0.6-2,0.4-4.1-0.6-5.9c-1-1.8-2.6-3.1-4.6-3.7c-2-0.6-4.1-0.4-5.9,0.6
+                c-3.6,2-6.2,6.1-7.6,9c-1.4-2.9-4-7.1-7.6-9c-3.8-2-8.5-0.6-10.5,3.1c-1.4,2.7-1.2,5.8,0.5,8.1h-7c-1.7,0-3.1,1.4-3.1,3.1v9.4
+                c0,1.7,1.4,3.1,3.1,3.1H4v26.1c0,3.3,2.7,6,6,6h35.5c3.3,0,6-2.7,6-6V27.8h0.8c1.7,0,3.1-1.4,3.1-3.1v-9.4
+                C55.5,13.6,54.1,12.2,52.3,12.2z M36.5,3c1.3-0.7,2.7-0.8,4.1-0.4C41.9,3,43,3.9,43.7,5.2c0.7,1.3,0.8,2.7,0.4,4.1
+                c-0.4,1.2-1.1,2.2-2.2,2.9H29.4C30.5,9.6,33,5,36.5,3z M11.7,5.2C13.2,2.6,16.4,1.6,19,3c3.5,1.9,6,6.6,7.1,9.1H13.5
+                C11.2,10.7,10.4,7.6,11.7,5.2z M26.5,27.8v13.7H6.4V27.8H26.5z M6.4,53.9v-10h20.2v13.7H10C8,57.6,6.4,55.9,6.4,53.9z M45.5,57.6
+                H28.9V43.9h20.2v10C49.1,55.9,47.5,57.6,45.5,57.6z M49.1,41.5H28.9V27.8h20.2V41.5z M53.1,24.7c0,0.4-0.3,0.7-0.7,0.7h-2
+                c0,0,0,0,0,0s0,0,0,0H27.7c0,0,0,0,0,0s0,0,0,0H5.2c0,0,0,0,0,0s0,0,0,0h-2c-0.4,0-0.7-0.3-0.7-0.7v-9.4c0-0.4,0.3-0.7,0.7-0.7h49.2
+                c0.4,0,0.7,0.3,0.7,0.7V24.7z"/>
+              </svg>
+              <p class="additional-products__text">Закажите все <br>
+              и получите чехол для кота в подарок!</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <section class="contacts-block inner-contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts-block__container contacts container">
-          <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__text">приглашаем <br>к сотрудничеству дилеров!</p>
           <div class="contacts__adress">
             <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
             <p class="contacts__city">Санкт-Петербург</p>
@@ -295,8 +332,15 @@
         </div>
         <iframe class="contacts-block__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573377471493!5m2!1sru!2sru"
-          width="320" height="400" allowfullscreen>
+          width="320" height="370" allowfullscreen>
         </iframe>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="contacts-block__bg-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.png 2x" width="320" height="400"
+            alt="Адрес компании: Санкт-Петербург, Большая Конюшенная 19/8">
+        </picture>
+        <img class="contacts-block__pin" src="img/map-pin.png" width="55" height="53" alt="Указатель на карте">
       </section>
 
     </main>
