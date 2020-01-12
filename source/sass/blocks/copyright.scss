@@ -10,20 +10,16 @@
   font-size: 16px;
   line-height: 16px;
 
-  &:hover,
-  &:focus {
-    path {
-      fill: $green;
-    }
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: $green;
   }
 
   &:active {
     color: rgba(68, 68, 68, 0.3);
 
-    path {
-      fill: $green;
-      opacity: 0.3;
-    }
+    fill: $green;
+    opacity: 0.3;
   }
 }
 
@@ -32,15 +28,23 @@
   top: 22px;
   right: 0;
 
-  path {
-    fill: $darker-grey;
-  }
+  fill: $darker-grey;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
-    padding-top: 24px;
+    padding-top: 22px;
     width: 162px;
+  }
+
+  .copyright__icon {
+    top: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding-top: 24px;
   }
 
   .copyright__icon {

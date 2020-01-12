@@ -67,7 +67,7 @@
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
-  padding-top: 79px;
+  padding-top: 81px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 25px;
@@ -91,13 +91,13 @@
 }
 
 .catalog__title--more {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   width: 100%;
 }
 
 .catalog__text {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   padding: 0;
 
   font-family: "Arial", sans-serif;
@@ -105,7 +105,7 @@
   line-height: 16px;
 }
 
-.сatalog__link--more {
+.catalog__link--more {
   color: $dark-grey;
 
 
@@ -148,14 +148,17 @@
     width: 100%;
   }
 
-  .catalog__image--chicken-big,
-  .catalog__image--fish-big,
-  .catalog__image--buckwheat-big {
+  .catalog__image--chicken-big {
     margin-top: -83px;
   }
 
+  .catalog__image--fish-big,
+  .catalog__image--buckwheat-big {
+    margin-top: -82px;
+  }
+
   .catalog__wrapper {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
     padding-right: 37px;
     padding-left: 38px;
     width: 100%;
@@ -182,17 +185,19 @@
 
   .catalog__field,
   .catalog__value {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 9px;
+    padding-bottom: 6px;
   }
 
   .catalog__link {
+    margin-top: 0;
     width: 249px;
   }
 
   .catalog__item--more {
     margin-bottom: 0;
     padding-top: 165px;
+    padding-bottom: 38px;
 
     background-color: $white;
     border: 1px solid $grey;
@@ -208,15 +213,16 @@
   }
 
   .catalog__title--more {
-    margin-bottom: 27px;
+    margin-bottom: 26px;
     width: 135px;
   }
 
   .catalog__text {
-    margin-bottom: 91px;
+    margin-bottom: 86px;
     width: 170px;
 
     font-size: 16px;
+    line-height: 18px;
   }
 }
 

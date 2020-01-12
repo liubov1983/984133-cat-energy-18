@@ -19,22 +19,16 @@
 }
 
 .social__icon {
-  path {
-    fill: $darker-grey;
-  }
+  fill: $darker-grey;
 
   &:hover,
   &:focus {
-    path {
-      fill: $green;
-    }
+    fill: $green;
   }
 
   &:active {
-    path {
-      fill: $green;
-      opacity: 0.3;
-    }
+    fill: $green;
+    opacity: 0.3;
   }
 }
 
@@ -44,7 +38,7 @@
   }
 
   .social__item {
-    padding-top: 16px;
+    padding-top: 13px;
     width: 51px;
   }
 

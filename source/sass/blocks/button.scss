@@ -23,9 +23,17 @@
   }
 }
 
+.promo__button {
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media (min-width: $tablet-width) {
   .promo__button {
-    padding-top: 14px;
+    padding-top: 17px;
     padding-bottom: 17px;
 
     font-size: 20px;

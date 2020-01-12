@@ -31,13 +31,14 @@
 
   .page-footer__logo-image {
     padding-top: 57px;
-    padding-bottom: 58px;
+    padding-bottom: 62px;
     margin-right: 28px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__logo-image {
-    padding-bottom: 62px;
+    padding-top: 60px;
+    padding-bottom: 64px;
   }
 }

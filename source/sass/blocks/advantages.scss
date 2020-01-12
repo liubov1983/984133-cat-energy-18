@@ -82,12 +82,6 @@
   }
 }
 
-@media (max-width: $mobile-only) {
-  .advantages__item--time br {
-    display: none;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .advantages {
     padding-top: 44px;
@@ -186,7 +180,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding-top: 73px;
+    padding-top: 72px;
     padding-bottom: 0;
 
     border: none;
@@ -199,6 +193,10 @@
   .advantages__item {
     margin-right: 0;
     width: 238px;
+  }
+
+  .advantages__item:nth-child(2n) {
+    margin-bottom: 0;
   }
 
   .advantages__item--time {

@@ -79,10 +79,6 @@
   border-bottom: 1px solid $grey;
 }
 
-.goal__description br {
-  display: none;
-}
-
 .goal__link {
   position: relative;
   display: block;
@@ -211,6 +207,7 @@
 
   .goal__item {
     margin-bottom: 0;
+    padding-top: 76px;
     width: 570px;
   }
 
@@ -249,10 +246,6 @@
   .goal__description {
     width: 462px;
     padding-top: 74px;
-    padding-bottom: 33px;
-  }
-
-  .goal__description br {
-    display: none;
+    padding-bottom: 31px;
   }
 }
