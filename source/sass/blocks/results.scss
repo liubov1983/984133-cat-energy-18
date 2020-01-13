@@ -8,14 +8,15 @@
 .results__value {
   position: relative;
   margin: 0;
-  width: 122px;
-  padding-top: 15px;
+  width: 123px;
+  padding-top: 14px;
   padding-bottom: 15px;
 
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   vertical-align: middle;
+  text-transform: uppercase;
 
   border: 1px solid $border-grey;
   border-radius: 3px;
@@ -23,7 +24,7 @@
 
 .results__description {
   position: absolute;
-  top: 45px;
+  top: 46px;
   display: block;
   width: 87px;
 
@@ -31,12 +32,14 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  text-transform: lowercase;
   color: $dark-grey;
+
   background-color: $bg-grey;
 }
 
 .results__description--left {
-  left: 18px;
+  left: 17px;
   padding: 0 16px;
 }
 
@@ -48,7 +51,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 38px;
+  margin-top: 35px;
   width: 187px;
 
   font-size: 14px;
@@ -64,8 +67,8 @@
 @media (min-width: $tablet-width) {
   .results__value {
     margin-right: 42px;
-    padding-top: 16px;
-    padding-bottom: 17px;
+    padding-top: 15px;
+    padding-bottom: 18px;
     width: 162px;
 
     font-size: 30px;
@@ -98,7 +101,7 @@
     align-items: center;
     margin: 0;
     margin-left: auto;
-    width: 174px;
+    width: 176px;
   }
 
   .results__text,
@@ -108,6 +111,36 @@
   }
 
   .results__price {
-    margin-top: 11px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .results {
+    width: 366px;
+  }
+
+  .results__value {
+    margin-right: 0;
+  }
+
+  .results__description {
+    background-color: $bg-grey;
+  }
+
+  .results__wrapper {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-top: 60px;
+    margin-left: 0;
+    width: 366px;
+  }
+
+  .results__text {
+    margin-right: 64px;
+  }
+
+  .results__price {
+    margin-top: 0;
   }
 }

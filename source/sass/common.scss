@@ -57,10 +57,26 @@ a {
   .container {
     width: 708px;
   }
+
+  .wrapper-catalog {
+    background-image: linear-gradient($white 88px, $green 88px, $green 91px, $white 91px);
+  }
+
+  .wrapper-form {
+    background-image: linear-gradient($white 857px, $green 857px, $green 860px, $white 860px, $white 1158px, $green 1158px, $green 1161px, $white 1161px, $white 1509px, $green 1509px, $green 1512px, $white 1512px);
+  }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     width: 1220px;
+  }
+
+  .wrapper-catalog {
+    background-image: linear-gradient($white 97px, $green 97px, $green 100px, $white 100px);
+  }
+
+  .wrapper-form {
+    background-image: linear-gradient($white 600px, $green 600px, $green 603px, $white 603px, $white 831px, $green 831px, $green 834px, $white 834px, $white 1183px, $green 1183px, $green 1186px, $white 1186px);
   }
 }

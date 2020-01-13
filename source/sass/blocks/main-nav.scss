@@ -6,28 +6,29 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -45px;
-  right: 0;
+  top: -43px;
+  right: -3px;
 
   display: block;
-  width: 19px;
+  width: 25px;
   height: 19px;
 
-  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
   background-color: $white;
   border: none;
   cursor: pointer;
 }
 
+.main-nav__toggle--open {
+  background-image: url("../img/icon-close.svg");
+}
+
+//Для переключения с помощью JavaScript
 .main-nav__toggle--closed {
   background-image: url("../img/icon-mobile-menu.svg");
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    display: flex;
-  }
-
   .main-nav__toggle {
     display: none;
   }

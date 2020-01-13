@@ -1,5 +1,5 @@
 .promo {
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 22px;
 
   color: $white;
@@ -7,7 +7,13 @@
   background-image: url("../img/index-can-mobile@1x.png"),
     url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 50% 70%, 50% 0;
+  background-position: 50% 72%, 50% 0;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"),
+      url("../img/index-background-mobile@2x.jpg");
+    background-size: 280px auto, 320px auto;
+  }
 }
 
 .promo__title {
@@ -22,7 +28,7 @@
 
 .promo__slogan {
   margin: 0;
-  margin-top: 19px;
+  margin-top: 26px;
   margin-bottom: 302px;
   padding: 0;
 
@@ -33,13 +39,21 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    padding-top: 54px;
+    padding-bottom: 529px;
+
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 100%;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 709px auto;
+    }
   }
 
   .promo__wrapper {
-    padding-left: 90px;
+    padding-left: 87px;
     width: 510px;
   }
 
@@ -51,7 +65,7 @@
   }
 
   .promo__slogan {
-    margin-top: 33px;
+    margin-top: 41px;
     margin-bottom: 48px;
 
     color: $black;
@@ -61,19 +75,25 @@
   }
 
   .promo__link {
-    margin-bottom: 530px;
     width: 245px;
+  }
+
+  .promo__button {
+    padding-top: 14px;
+    padding-bottom: 17px;
+
+    font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding-top: 113px;
+    padding-top: 107px;
     padding-bottom: 80px;
 
     background-image: url("../img/index-can-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 63% 50%;
+    background-position: 65% 16%;
 
     &::before {
       content: "";
@@ -86,11 +106,23 @@
 
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
+      background-color: $green-hover;
+      background-position: 100% 50%;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png");
+      background-size: 552px auto;
     }
   }
 
   .promo__wrapper {
-    padding-left: 85px;
+    padding-left: 81px;
     padding-bottom: 188px;
   }
 

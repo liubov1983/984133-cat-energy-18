@@ -6,16 +6,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 25px;
+  margin-bottom: -1px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 24px;
 
-  border-bottom: 1px solid $border-light-grey;
+  border: 1px solid $border-light-grey;
 }
 
 .catalog__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 140px;
+  justify-content: space-between;
+  width: 138px;
 }
 
 .catalog__image {
@@ -24,7 +27,7 @@
 
 .catalog__title {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 13px;
   padding: 0;
   width: 75px;
 
@@ -46,11 +49,16 @@
 
 .catalog__field,
 .catalog__value {
+  padding: 0;
   width: 50%;
 }
 
 .catalog__value {
   text-align: right;
+}
+
+.catalog__link {
+  margin-top: -3px;
 }
 
 .catalog__item--more {
@@ -59,16 +67,18 @@
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
-  padding-top: 82px;
-  width: 100%;
+  padding-top: 81px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
 
   text-align: center;
 
   &::after {
     content: "";
     position: absolute;
-    top: 27px;
-    left: 125px;
+    top: 26px;
+    left: 143px;
 
     width: 31px;
     height: 31px;
@@ -80,9 +90,14 @@
   }
 }
 
+.catalog__title--more {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
 .catalog__text {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
   padding: 0;
 
   font-family: "Arial", sans-serif;
@@ -90,8 +105,10 @@
   line-height: 16px;
 }
 
-.сatalog__link--more {
+.catalog__link--more {
   color: $dark-grey;
+
+
   background-color: $bg-grey;
 
   &:hover,
@@ -112,108 +129,44 @@
   }
 
   .catalog__item {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 140px;
-    padding-top: 165px;
-    padding-right: 37px;
-    padding-left: 38px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 40px;
     width: 324px;
 
     background-color: $bg-grey;
     border: none;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 305px;
-
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
-  }
-
-  .catalog__item--chicken-small {
-    &::before {
-      left: 83px;
-      width: 161px;
-      height: 172px;
-
-      background-image: url("../img/chicken-small-tablet@1x.png");
-    }
-  }
-
-  .catalog__item--chicken-big {
-    &::before {
-      left: 68px;
-      width: 195px;
-      height: 208px;
-
-      background-image: url("../img/chicken-big-tablet@1x.png");
-    }
-  }
-
-  .catalog__item--fish-small {
-    &::before {
-      left: 83px;
-      width: 163px;
-      height: 174px;
-
-      background-image: url("../img/fish-small-tablet@1x.png");
-    }
-  }
-
-  .catalog__item--fish-big {
-    &::before {
-      left: 68px;
-      width: 194px;
-      height: 208px;
-
-      background-image: url("../img/fish-big-tablet@1x.png");
-    }
-  }
-
-  .catalog__item--buckwheat-small {
-    &::before {
-      left: 84px;
-      width: 161px;
-      height: 171px;
-
-      background-image: url("../img/buckwheat-small-tablet@1x.png");
-    }
-  }
-
-  .catalog__item--buckwheat-big {
-    &::before {
-      left: 68px;
-      width: 195px;
-      height: 208px;
-
-      background-image: url("../img/buckwheat-big-tablet@1x.png");
-    }
-  }
-
-  .catalog__item--rice {
-    &::before {
-      left: 83px;
-      width: 163px;
-      height: 174px;
-
-      background-image: url("../img/rice-small-tablet@1x.png");
-    }
   }
 
   .catalog__image {
-    display: none;
+    margin-top: -47px;
+    margin-bottom: 35px;
+    width: 100%;
+  }
+
+  .catalog__image--chicken-big {
+    margin-top: -83px;
+  }
+
+  .catalog__image--fish-big,
+  .catalog__image--buckwheat-big {
+    margin-top: -82px;
   }
 
   .catalog__wrapper {
     margin-bottom: 33px;
+    padding-right: 37px;
+    padding-left: 38px;
     width: 100%;
     align-items: center;
   }
 
   .catalog__title {
+    margin-bottom: 18px;
     width: 130px;
 
     font-size: 20px;
@@ -233,16 +186,25 @@
   .catalog__field,
   .catalog__value {
     padding-top: 9px;
-    padding-bottom: 9px;
+    padding-bottom: 6px;
+  }
+
+  .catalog__link {
+    margin-top: 0;
+    width: 249px;
   }
 
   .catalog__item--more {
+    margin-bottom: 0;
+    padding-top: 165px;
+    padding-bottom: 38px;
+
     background-color: $white;
     border: 1px solid $grey;
 
     &::after {
       top: 55px;
-      left: 133px;
+      left: 132px;
       width: 61px;
       height: 61px;
 
@@ -251,14 +213,16 @@
   }
 
   .catalog__title--more {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
     width: 135px;
   }
 
   .catalog__text {
-    margin-bottom: 95px;
+    margin-bottom: 86px;
+    width: 170px;
 
     font-size: 16px;
+    line-height: 18px;
   }
 }
 
@@ -267,68 +231,19 @@
     width: 245px;
   }
 
-  .catalog__item--chicken-small {
-    &::before {
-      left: 45px;
-
-      background-image: url("../img/chicken-small-desktop@1x.png");
-    }
-  }
-
-  .catalog__item--chicken-big {
-    &::before {
-      left: 29px;
-
-      background-image: url("../img/chicken-big-desktop@1x.png");
-    }
-  }
-
-  .catalog__item--fish-small {
-    &::before {
-      left: 44px;
-
-      background-image: url("../img/fish-small-desktop@1x.png");
-    }
-  }
-
-  .catalog__item--fish-big {
-    &::before {
-      left: 29px;
-
-      background-image: url("../img/fish-big-desktop@1x.png");
-    }
-  }
-
-  .catalog__item--buckwheat-small {
-    &::before {
-      left: 45px;
-
-      background-image: url("../img/buckwheat-small-desktop@1x.png");
-    }
-  }
-
-  .catalog__item--buckwheat-big {
-    &::before {
-      left: 29px;
-
-      background-image: url("../img/buckwheat-big-desktop@1x.png");
-    }
-  }
-
-  .catalog__item--rice {
-    &::before {
-      left: 44px;
-
-      background-image: url("../img/rice-small-desktop@1x.png");
-    }
-  }
-
   .catalog__description {
     width: 168px;
   }
 
+  .catalog__link {
+    width: 170px;
+  }
+
   .catalog__item--more {
+    padding-top: 165px;
+
     &::after {
+      top: 55px;
       left: 93px;
     }
   }

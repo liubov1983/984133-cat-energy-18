@@ -3,7 +3,7 @@
 }
 
 .additional__item {
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 17px;
 
   border-bottom: 1px solid $border-grey;
@@ -11,7 +11,7 @@
 
 .additional__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding: 0;
 
   font-size: 16px;
@@ -25,8 +25,8 @@
   justify-content: space-between;
 
   font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .additional__text {
@@ -38,25 +38,23 @@
 .additional-products__promo {
   position: relative;
   padding-top: 39px;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
 }
 
 .additional-products__icon {
   position: absolute;
-  top: 104px;
+  top: 103px;
   left: 113px;
 
-  path {
-    fill: $white;
-  }
+  fill: $white;
 }
 
 .additional-products__text {
   position: absolute;
-  left: 65px;
-  bottom: 60px;
+  left: 56px;
+  bottom: 62px;
 
-  width: 156px;
+  width: 165px;
 
   color: $white;
   font-family: "Arial", sans-serif;
@@ -71,38 +69,48 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: -1px;
-    padding: 28px 38px;
+    padding-top: 26px;
+    padding-left: 38px;
+    padding-right: 36px;
+    padding-bottom: 27px;
 
     border: 1px solid rgba(205, 205, 205, 0.5);
   }
 
-  .additional__description {
-    justify-content: flex-end;
-    width: 290px;
+  .additional__title {
+    margin-bottom: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
-  .additional__text {
-    margin-bottom: 26px;
+  .additional__description {
+    justify-content: flex-end;
+    padding-top: 2px;
+    width: 290px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additional__text--price {
-    width: 98px;
+    width: 95px;
 
     text-align: right;
   }
 
   .additional-products__promo {
     padding-top: 69px;
-    padding-bottom: 76px;
+    padding-bottom: 73px;
   }
 
   .additional-products__icon {
     top: 134px;
-    left: 96px;
+    left: 91px;
   }
 
   .additional-products__text {
-    top: 144px;
+    top: 142px;
     left: 424px;
 
     margin: 0;
@@ -115,12 +123,16 @@
   .additional__item {
     align-items: center;
     flex-wrap: nowrap;
-    width: 825px;
     padding: 15px 0 16px 0;
 
     border: none;
     border-top: 1px solid rgba(205, 205, 205, 0.5);
     border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+  }
+
+  .additional__description {
+    justify-content: space-between;
+    width: 325px;
   }
 
   .additional__title,
@@ -133,8 +145,6 @@
   }
 
   .additional__text {
-    width: 245px;
-
     text-align: left;
   }
 
@@ -156,8 +166,8 @@
   }
 
   .additional-products__text {
-    top: 190px;
-    left: 43px;
+    top: 185px;
+    left: 40px;
 
     text-align: center;
   }
