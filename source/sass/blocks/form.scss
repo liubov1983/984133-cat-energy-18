@@ -81,11 +81,16 @@
   outline: none;
 }
 
-//Для JavaScript
-.form__input--error {
+.form__input:not(:placeholder-shown):invalid {
   border: 2px solid $error;
   outline: none;
 }
+
+/*Для JavaScript
+.form__input--error {
+  border: 2px solid $error;
+  outline: none;
+}*/
 
 .form__input--weight {
   margin-left: 17px;

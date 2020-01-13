@@ -377,7 +377,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background-image: linear-gradient(to right, $bg-grey 74%, transparent 74%),
+    background-image: linear-gradient(to right, $bg-grey 1000px, transparent 1000px),
       linear-gradient($white 30%, $slider-grey 30%);
   }
 
