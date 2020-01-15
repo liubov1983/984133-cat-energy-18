@@ -81,16 +81,18 @@
   outline: none;
 }
 
+.form__input:focus + .form__icon {
+  fill: $green;
+}
+
 .form__input:not(:placeholder-shown):invalid {
   border: 2px solid $error;
   outline: none;
 }
 
-/*Для JavaScript
-.form__input--error {
-  border: 2px solid $error;
-  outline: none;
-}*/
+.form__input:not(:placeholder-shown):invalid + .form__icon {
+  fill: $error;
+}
 
 .form__input--weight {
   margin-left: 17px;

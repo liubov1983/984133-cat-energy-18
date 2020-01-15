@@ -76,6 +76,7 @@
 
   &::after {
     content: "";
+
     position: absolute;
     top: 26px;
     left: 143px;
@@ -158,11 +159,11 @@
   }
 
   .catalog__wrapper {
+    align-items: center;
     margin-bottom: 33px;
     padding-right: 37px;
     padding-left: 38px;
     width: 100%;
-    align-items: center;
   }
 
   .catalog__title {

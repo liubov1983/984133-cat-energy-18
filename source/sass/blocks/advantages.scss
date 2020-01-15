@@ -124,6 +124,7 @@
 
     &::after {
       content: "";
+
       position: absolute;
       top: 86px;
       left: 117px;
@@ -147,6 +148,7 @@
   .advantages__item--leaf {
     &::after {
       content: "1";
+
       width: 71px;
     }
   }
@@ -154,6 +156,7 @@
   .advantages__item--water {
     &::after {
       content: "2";
+
       left: 111px;
       width: 115px;
     }
@@ -162,6 +165,7 @@
   .advantages__item--fork {
     &::after {
       content: "3";
+
       left: 113px;
       width: 114px;
     }
@@ -172,6 +176,7 @@
 
     &::after {
       content: "4";
+
       left: 113px;
       width: 121px;
     }
