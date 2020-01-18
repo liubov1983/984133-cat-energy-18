@@ -27,31 +27,6 @@
   line-height: 20px;
 }
 
-.contacts-block__map {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-
-  border: none;
-}
-
-.contacts-block__bg-map {
-  position: absolute;
-  top: 114px;
-  left: 50%;
-  z-index: -2;
-  margin-left: -160px;
-  width: 320px;
-}
-
-.contacts-block__pin {
-  position: absolute;
-  top: 300px;
-  left: 46%;
-  z-index: -1;
-  width: 55px;
-}
-
 @media (min-width: $tablet-width) {
   .contacts__text {
     width: 154px;
@@ -73,17 +48,6 @@
     line-height: 20px;
     text-align: right;
   }
-
-  .contacts-block__bg-map {
-    top: 205px;
-    margin-left: -384px;
-    width: 767px;
-  }
-
-  .contacts-block__pin {
-    top: 360px;
-    width: 113px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -96,18 +60,5 @@
   .contacts__street,
   .contacts__city {
     text-align: left;
-  }
-
-  .contacts-block__bg-map {
-    top: 0;
-    left: 0;
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .contacts-block__pin {
-    top: 170px;
-    left: 1050px;
-    width: 113px;
   }
 }

@@ -192,19 +192,28 @@
   }
 
   .advantages__list {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .advantages__item {
-    margin-right: 0;
+    margin-right: 88px;
     width: 238px;
   }
 
   .advantages__item:nth-child(2n) {
+    margin-right: 88px;
     margin-bottom: 0;
   }
 
+  .advantages__item:nth-child(3n) {
+    margin-right: 85px;
+  }
+
+  .advantages__item:nth-child(4n) {
+    margin-right: 0;
+  }
+
   .advantages__item--time {
-    width: 246px;
+    width: 245px;
   }
 }

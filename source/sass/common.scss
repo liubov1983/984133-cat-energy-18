@@ -54,6 +54,12 @@ a {
   overflow: hidden;
 }
 
+@media (max-width: $mobile-only) {
+  .wrapper-promo {
+    background-image: linear-gradient($bg-promo 305px, transparent 305px);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .container {
     width: 708px;

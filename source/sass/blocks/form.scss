@@ -1,3 +1,4 @@
+/*stylelint-disable*/
 .form {
   display: block;
 }
@@ -57,6 +58,7 @@
 }
 
 .form__input {
+  box-sizing: border-box;
   margin-left: 13px;
   padding-left: 15px;
   height: 45px;
@@ -68,6 +70,15 @@
   border: 1px solid rgba(205, 205, 205, 0.5);
 }
 
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.form__input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .form__input:hover,
 .form__textarea:hover {
   border-color: $border-grey;
@@ -77,8 +88,14 @@
 
 .form__input:focus,
 .form__textarea:focus {
+  padding-left: 19px;
+
   border: 2px solid $dark-grey;
   outline: none;
+}
+
+.form__textarea:focus {
+  padding-top: 8px;
 }
 
 .form__input:focus + .form__icon {
@@ -212,6 +229,8 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  border: 1px solid rgba(205, 205, 205, 0.5);
 }
 
 .form__legend--additional {
@@ -274,17 +293,6 @@
 
 .form__button {
   margin-top: 17px;
-}
-
-.user-form__note {
-  margin: 0;
-  padding-top: 22px;
-  padding-bottom: 31px;
-
-  color: $dark-grey;
-  font-family: "Arial", sans-serif;
-  line-height: 16px;
-  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -471,12 +479,6 @@
 
     font-size: 20px;
     line-height: 20px;
-  }
-
-  .user-form__note {
-    padding: 0;
-
-    font-size: 16px;
   }
 }
 
