@@ -4,26 +4,29 @@
   background-color: $white;
 }
 
+//Для JavaScript
 .main-nav__toggle {
   position: absolute;
   top: -43px;
   right: -3px;
 
-  display: block;
+  display: none;
   width: 25px;
   height: 19px;
 
   background-repeat: no-repeat;
   background-color: $white;
   border: none;
+
   cursor: pointer;
 }
 
+//Для JavaScript
 .main-nav__toggle--open {
   background-image: url("../img/icon-close.svg");
 }
 
-//Для переключения с помощью JavaScript
+//Для JavaScript
 .main-nav__toggle--closed {
   background-image: url("../img/icon-mobile-menu.svg");
 }
