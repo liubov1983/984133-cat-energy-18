@@ -23,7 +23,7 @@
   }
 }
 
-.promo__button {
+.button--promo {
   padding-top: 11px;
   padding-bottom: 11px;
 
@@ -32,7 +32,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo__button {
+  .button--promo {
     padding-top: 17px;
     padding-bottom: 17px;
 

@@ -124,6 +124,7 @@
 
     &::after {
       content: "";
+
       position: absolute;
       top: 86px;
       left: 117px;
@@ -147,6 +148,7 @@
   .advantages__item--leaf {
     &::after {
       content: "1";
+
       width: 71px;
     }
   }
@@ -154,6 +156,7 @@
   .advantages__item--water {
     &::after {
       content: "2";
+
       left: 111px;
       width: 115px;
     }
@@ -162,6 +165,7 @@
   .advantages__item--fork {
     &::after {
       content: "3";
+
       left: 113px;
       width: 114px;
     }
@@ -172,6 +176,7 @@
 
     &::after {
       content: "4";
+
       left: 113px;
       width: 121px;
     }
@@ -187,19 +192,28 @@
   }
 
   .advantages__list {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .advantages__item {
-    margin-right: 0;
+    margin-right: 88px;
     width: 238px;
   }
 
   .advantages__item:nth-child(2n) {
+    margin-right: 88px;
     margin-bottom: 0;
   }
 
+  .advantages__item:nth-child(3n) {
+    margin-right: 85px;
+  }
+
+  .advantages__item:nth-child(4n) {
+    margin-right: 0;
+  }
+
   .advantages__item--time {
-    width: 246px;
+    width: 245px;
   }
 }

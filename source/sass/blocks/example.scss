@@ -29,13 +29,12 @@
 
 .example__wrapper {
   margin-top: 44px;
-  padding-bottom: 39px;
 }
 
 .example__wrapper-slider {
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
 }
 
 .example__image {
@@ -74,15 +73,15 @@
 .example__toggle {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  margin-top: 31px;
+  margin-left: 63px;
   width: 198px;
-  margin-top: 39px;
-  margin-left: 64px;
 }
 
 .example__button {
   padding: 0;
   padding-bottom: 3px;
+
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -103,52 +102,57 @@
 }
 
 .example__range {
-  -webkit-appearance: none;
-  padding-top: 3px;
-  width: 86px;
+  appearance: none;
+  margin: 0 12px;
+  margin-bottom: 5px;
+  padding: 0;
+  width: 84px;
+  height: 35px;
 
   background-color: transparent;
 
-  &:focus {
-    outline: none;
-  }
-
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    margin-top: 3px;
     width: 35px;
     height: 6px;
 
+    border: none;
+    border-radius: 5px;
     background-color: $green;
-    border-radius: 3px;
 
     cursor: pointer;
   }
 
   &::-moz-range-thumb {
-    -webkit-appearance: none;
-    width: 34px;
+    box-sizing: border-box;
+    width: 35px;
     height: 6px;
 
+    border: none;
+    border-radius: 5px;
     background-color: $green;
-    border-radius: 3px;
-
-    cursor: pointer;
   }
 
   &::-ms-thumb {
-    -webkit-appearance: none;
-    width: 34px;
+    box-sizing: border-box;
+    margin-top: 0;
+    width: 35px;
     height: 6px;
 
+    border: none;
+    border-radius: 5px;
     background-color: $green;
-    border: transparent;
-    border-radius: 3px;
+  }
 
-    cursor: pointer;
+  &::-ms-tooltip {
+    display: none;
   }
 
   &::-webkit-slider-runnable-track {
-    padding: 3px 6px;
+    box-sizing: border-box;
+    padding: 0 5px;
     width: 84px;
     height: 14px;
 
@@ -160,6 +164,8 @@
   }
 
   &::-moz-range-track {
+    box-sizing: border-box;
+    padding: 0 5px;
     width: 84px;
     height: 14px;
 
@@ -171,6 +177,8 @@
   }
 
   &::-ms-track {
+    box-sizing: border-box;
+    padding: 0 5px;
     width: 84px;
     height: 14px;
 
@@ -181,16 +189,14 @@
     cursor: pointer;
   }
 
-  &::-ms-fill-lower,
-  &::-ms-fill-upper {
-    background-color: transparent;
+  &::-ms-fill-lower {
+    display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .example {
-    background-image: linear-gradient(to right, $bg-grey 50%, transparent 50%),
-      linear-gradient($white 575px, $slider-grey 575px);
+    background-image: linear-gradient(to right, $bg-grey 50%, $slider-grey 50%);
   }
 
   .example__wrap {
@@ -205,20 +211,23 @@
   }
 
   .example__text {
-    margin-bottom: 53px;
+    margin-bottom: 55px;
     width: 677px;
 
     font-size: 16px;
     line-height: 24px;
   }
 
+  .example__results {
+    margin-bottom: 85px;
+  }
+
   .example__wrapper-slider {
     position: relative;
-    width: 668px;
-    margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 115px;
+    width: 668px;
   }
 
   .example__slider {
@@ -227,11 +236,11 @@
   }
 
   .example__slide {
-    background-image: linear-gradient($white 170px, $bg-grey 170px);
+    background-image: linear-gradient($white 169px, transparent 169px);
   }
 
   .example__slide--after {
-    left: 5px;
+    left: 3px;
     width: 50%;
   }
 
@@ -248,7 +257,7 @@
   .example__toggle {
     position: absolute;
     left: -14px;
-    bottom: 32px;
+    bottom: 61px;
     z-index: 5;
     align-items: center;
     margin-top: 0;
@@ -256,131 +265,135 @@
   }
 
   .example__button {
+    padding-bottom: 7px;
+
     font-size: 20px;
   }
 
   .example__range {
-    -webkit-appearance: none;
-    padding-top: 0;
-    padding-bottom: 0;
-    height: 100px;
-    width: 426px;
-
-    background-color: transparent;
-
-    &:focus {
-      outline: none;
-    }
+    margin: 0 12px;
+    padding: 0;
+    width: 428px;
+    height: 40px;
 
     &::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      margin-top: -18px;
+      margin-top: -15px;
       width: 34px;
       height: 34px;
 
       background-color: $green;
-      border: 1px solid $border-grey;
+      border: 13px solid $white;
       border-radius: 50%;
-      box-shadow: inset 0 0 0 12px $white, 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
       cursor: pointer;
     }
 
     &:hover::-webkit-slider-thumb {
-      box-shadow: inset 0 0 0 12px $white, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
     &:active::-webkit-slider-thumb {
-      border: 2px solid $green;
-      box-shadow: inset 0 0 0 11px $white, 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      width: 32px;
+      height: 32px;
+      border: 12px solid $white;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3), 0 0 0 2px $green;
     }
 
     &::-webkit-slider-runnable-track {
+      padding: 0;
+      width: 428px;
       height: 6px;
 
       background-color: $range-grey;
       border: none;
-      border-radius: 2.5px;
+      border-radius: 5px;
 
       cursor: pointer;
     }
 
     &::-moz-range-thumb {
-      -webkit-appearance: none;
       width: 34px;
       height: 34px;
 
       background-color: $green;
-      border: 1px solid $border-grey;
+      border: 13px solid $white;
       border-radius: 50%;
-      box-shadow: inset 0 0 0 12px $white, 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
       cursor: pointer;
     }
 
     &:hover::-moz-range-thumb {
-      box-shadow: inset 0 0 0 12px $white, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
     &:active::-moz-range-thumb {
-      border: 2px solid $green;
-      box-shadow: inset 0 0 0 12px $white, 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      width: 32px;
+      height: 32px;
+      border: 12px solid $white;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3), 0 0 0 2px $green;
     }
 
     &::-moz-range-track {
-      width: 426px;
+      padding: 0;
+      width: 428px;
       height: 6px;
 
       background-color: $range-grey;
       border: none;
-      border-radius: 2.5px;
+      border-radius: 5px;
 
       cursor: pointer;
     }
 
     &::-ms-thumb {
-      -webkit-appearance: none;
+      margin-top: 0;
       width: 34px;
       height: 34px;
 
       background-color: $green;
-      border: 1px solid $border-grey;
+      border: 13px solid $white;
       border-radius: 50%;
-      box-shadow: inset 0 0 0 12px $white, 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
       cursor: pointer;
     }
 
     &:hover::-ms-thumb {
-      box-shadow: inset 0 0 0 12px $white, 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
     &:active::-ms-thumb {
-      border: 2px solid $green;
-      box-shadow: inset 0 0 0 13px $white, 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      width: 32px;
+      height: 32px;
+      border: 12px solid $white;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3), 0 0 0 2px $green;
     }
 
     &::-ms-track {
-      width: 426px;
+      padding: 0;
+      width: 428px;
       height: 6px;
 
-      color: transparent;
-      background: transparent;
-      border: none;
       background-color: $range-grey;
-      border-radius: 2.5px;
+      border: none;
+      border-radius: 5px;
 
       cursor: pointer;
+    }
+
+    &::-ms-fill-upper {
+      background-color: $range-grey;
+    }
+
+    &::-ms-fill-lower {
+      background-color: $range-grey;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .example {
-    background-image: linear-gradient(to right, $bg-grey 1000px, transparent 1000px),
-      linear-gradient($white 30%, $slider-grey 30%);
-  }
-
   .example__wrap {
     background-image: linear-gradient($white 30%, transparent 30%);
   }
@@ -388,9 +401,9 @@
   .example__container {
     display: flex;
     justify-content: space-between;
-    width: 1300px;
     margin: 0 auto;
     padding-left: 40px;
+    width: 1300px;
   }
 
   .example__wrapper {
@@ -413,14 +426,18 @@
     margin-left: auto;
     padding-bottom: 68px;
     width: 690px;
+
+    background-image: linear-gradient(to right, $bg-grey 365px, $slider-grey 365px);
   }
 
   .example__slider {
     width: 690px;
+
+    background-image: linear-gradient($white 191px, transparent 191px);
   }
 
   .example__slide {
-    background-image: linear-gradient($white 189px, $bg-grey 189px);
+    background-image: linear-gradient($white 192px, transparent 192px);
   }
 
   .example__image {
@@ -436,10 +453,11 @@
   }
 
   .example__toggle {
-    left: 17px;
+    left: 18px;
+    bottom: 70px;
   }
 
-  .example__button {
-    bottom: 40px;
+  .example__range {
+    margin: 0 23px;
   }
 }
